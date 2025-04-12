@@ -89,7 +89,7 @@ def get_all_usuarios():
             user_data = usuario.to_dict()
             if user_data.get("foto_perfil"):
                 # Asegura que la URL sea completa
-                user_data["foto_perfil"] = f"http://127.0.0.1:5000{user_data['foto_perfil']}"
+                user_data["foto_perfil"] = f"https://3.148.205.107{user_data['foto_perfil']}"
             usuarios.append(user_data)
         return jsonify(usuarios), 200
     except Exception as error:
