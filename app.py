@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # Configuración de CORS para permitir solo el dominio específico
 CORS(app, resources={
-    r"/usuario/*": {"origins": "https://main.d3gd2kcl7rhrjn.amplifyapp.com"}
+    r"/usuario/*": {"origins": "https://main.d7pgfp03ua8gb.amplifyapp.com/"}
 })
 
 # Configuración de Swagger
