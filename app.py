@@ -62,4 +62,4 @@ def create_app():
 if __name__ == '__main__':
     app = create_app()
     # En producción, usamos host='0.0.0.0' para que sea accesible desde fuera de la EC2
-    app.run(debug=False, host='0.0.0.0', port=5000)  # Esto es solo para pruebas locales. Para producción, usa Gunicorn.
+    app.run(host='0.0.0.0', port=8000) # Esto es solo para pruebas locales. Para producción, usa Gunicorn.
