@@ -14,9 +14,7 @@ load_dotenv()
 app = Flask(__name__)
 
 # Configuración de CORS para permitir solo el dominio específico
-CORS(app, resources={
-    r"/usuario/*": {"origins": "https://main.d7pgfp03ua8gb.amplifyapp.com"}
-})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configuración de Swagger
 swagger_config = {
